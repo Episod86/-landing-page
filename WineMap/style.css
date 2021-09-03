@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* общие стили */
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  /* background: #282828; */
+}
+.container {
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #282828;
+}
+.wrapper {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* стили header*/
+.header {
+  background: url(image/header-bgc.png) no-repeat;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.text {
+  padding: 100px 0;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #c4c4c4;
+  padding: 60px 0;
+}
+.text-box h2 {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+.text-box span {
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  max-width: 160px;
+  margin: 40px 0;
+}
+.text-content {
+  max-width: 732px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+}
+.text-box img {
+  padding-top: 50px;
+}
