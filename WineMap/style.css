@@ -119,3 +119,36 @@ button {
 .text-box img {
   padding-top: 50px;
 }
+
+/* стили footer*/
+.footer {
+  background-color: #99862a;
+}
+.footer-box {
+  padding: 50px 0;
+}
+.footer-nav-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.footer-nav-list li {
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  padding: 19px 0 20px;
+}
+.footer-contacts {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+}
+.footer-contacts div {
+  border: 1px solid #ffffff;
+  border-left: 0;
+  text-align: center;
+  padding: 19px 0 20px;
+}
+.footer-contacts div:last-child {
+  border-right: 0;
+}
