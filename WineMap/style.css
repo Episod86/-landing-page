@@ -106,6 +106,12 @@ h2 + div {
 .header-button button {
   margin: 15px;
 }
+.header-button button:first-child a {
+  padding: 0 6px;
+}
+.header-button button:last-child a {
+  padding: 0 4px;
+}
 
 /* стили text*/
 .text {
@@ -182,6 +188,9 @@ h2 + div {
 }
 .collection-table:first-child .collection-table-content {
   padding-top: 5px;
+}
+.collection-content button a {
+  padding: 0 8px;
 }
 .collection-img {
   display: grid;
