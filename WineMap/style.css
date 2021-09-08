@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   color: #ffffff;
   background: #282828;
+  line-height: 150%;
 }
 .container {
   max-width: 1920px;
@@ -54,12 +55,6 @@ h3 {
   font-weight: 700;
   line-height: 150%;
 }
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 18px;
-}
 h2 + div {
   width: 100%;
   max-width: 160px;
@@ -74,6 +69,7 @@ h2 + div {
     url(image/header-bgc.png), #ededed;
   background-size: cover;
   min-height: 900px;
+  /* margin: 0 20px; */
 }
 .header-menu-contact {
   display: flex;
@@ -146,17 +142,24 @@ h2 + div {
 }
 .collection-box {
   display: flex;
-  gap: 125px;
+  justify-content: space-between;
   margin: 80px 0;
   padding: 60px 0;
   color: #000000;
   border-top: 1px solid #998431;
   border-bottom: 1px solid #998431;
 }
+.collection-content {
+  flex: 0 1 450px;
+}
 .collection-subtitle {
   font-size: 16px;
 }
+.collection h3 {
+  font-size: 18px;
+}
 .collection-box h2 {
+  font-size: 36px;
   padding: 30px 0;
 }
 .collection-box h2 + div {
@@ -200,6 +203,31 @@ h2 + div {
 .collection-img img:first-child {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
+}
+/* стили form*/
+.form-box {
+  padding: 130px 0 100px;
+  position: relative;
+}
+.form-box img {
+  position: absolute;
+}
+.form-box form {
+  border: 3px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* max-width: 539px; */
+  margin: 0 auto;
+}
+.form-box form > * {
+  max-width: 539px;
+}
+.form h2 {
+  font-size: 36px;
+  position: absolute;
+  top: 100;
 }
 
 /* стили footer*/
