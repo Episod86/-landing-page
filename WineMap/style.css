@@ -228,6 +228,9 @@ h2 + div {
   font-size: 36px;
   position: absolute;
   top: 100;
+  transform: translateY(100px);
+  position: relative;
+  padding: 10px 50px;
 }
 
 /* стили footer*/
