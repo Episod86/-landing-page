@@ -35,7 +35,9 @@ body {
 a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  /* padding: 10px 0; */
 }
 ul {
   list-style-type: none;
@@ -240,15 +242,26 @@ h2 + div {
 .footer-box {
   padding: 50px 0;
 }
+.footer-nav-list,
+.footer-nav-list li,
+.footer-contacts div,
+.footer-contacts-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-nav-list {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-.footer-nav-list li {
+  /* justify-content: center; */
+  min-height: 60px;
+  gap: 60px;
   border-top: 1px solid #ffffff;
-  text-align: center;
-  padding: 19px 0 20px;
 }
+/* .footer-nav-list li {
+ 
+  align-items: center;
+} */
+
 .footer-contacts {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -259,9 +272,19 @@ h2 + div {
 .footer-contacts div {
   border: 1px solid #ffffff;
   border-left: 0;
-  text-align: center;
-  padding: 19px 0 20px;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 15px 0;
 }
+
 .footer-contacts div:last-child {
   border-right: 0;
+}
+/* .footer-contacts-items a:not(:last-child) {
+  padding-right: 35px;
+} */
+.footer-contacts-items {
+  min-width: 146px;
+  justify-content: space-between;
 }
