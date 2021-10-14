@@ -217,6 +217,7 @@ h2 + div {
 .form-box {
   margin: 130px 0 100px;
   border: 3px solid #c4c4c4;
+  min-height: 538px;
   position: relative;
 }
 
@@ -227,23 +228,27 @@ h2 + div {
 }
 .form-box form {
   max-width: 539px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  transform: translateY(-40px);
 }
 .form h2 {
   /* transform: translateY(100px); */
 
   padding: 10px 50px;
   margin-bottom: 30px;
+  z-index: 10;
+  background: #282828;
 }
 .form h2 + div {
   border-top: 1px solid #ffffff;
   max-width: 118px;
 }
 .form .form-text {
-  padding: 40px 0;
+  padding: 40px 0 70px;
   text-align: center;
 }
 .form .personal-info {
@@ -251,6 +256,28 @@ h2 + div {
   grid-template: 1fr / repeat(2, auto);
   grid-gap: 30px;
   width: 100%;
+}
+.form input {
+  width: 100%;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #ffffff;
+  background: #282828;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.form button {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: #282828;
+  margin: 10px 0;
+  border: 1px solid #ffffff;
 }
 
 /* стили footer*/
